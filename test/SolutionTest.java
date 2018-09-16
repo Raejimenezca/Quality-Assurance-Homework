@@ -11,13 +11,30 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Usuario
+ * @author Christian Camilo Guzmán Escobar
+ * @author Rafael Enrique Jimenez Cabrera
  */
 public class SolutionTest {
     
     public SolutionTest() {
     }
+    
+    
+    /* 
+        Feature: Sort student information list
 
+        Scenario Outline: Unordered student information list
+            Given a list with elements st1 st2 st3 st4 st5 in that order
+            When asked to sort the input list 
+            Then the elements in of the sorted list should be st2 <sorted-list> in that order
+
+            Examples:
+                |     sorted list     |
+                | st2 st5 st4 st3 st1 |
+                | st1 st2 st5 st4 st3 |
+                | st2 st3 st4 st1 st5 |
+    */
+    
     /**
      * Test of sortList method, of class Solution.
      */
