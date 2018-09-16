@@ -9,13 +9,22 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Usuario
+ * @author Christian Camilo Guzmán Escobar
+ * @author Rafael Enrique Jimenez Cabrera
  */
 public class StudentTest {
     
     public StudentTest() {
     }
-
+    
+    /*
+        Feature: Get student id
+            Scenario: Verify id number of a student
+                Given there is an student with id 33 and fname "Rumpa" and cgpa 3.68
+                When asked for getId 
+                Then I should get 33 id number
+    */
+    
     /**
      * Test of getId method, of class Student.
      */
@@ -28,6 +37,14 @@ public class StudentTest {
         assertEquals(expResult, result);
     }
 
+    /*
+        Feature: Get student fname
+            Scenario: Verify fname of a student
+                Given there is an student with id 19 and fname "Samaria" and cgpa 3.75
+                When asked for getFname 
+                Then I should get "Samaria" fname
+    */
+    
     /**
      * Test of getFname method, of class Student.
      */
@@ -39,7 +56,15 @@ public class StudentTest {
         String result = st2.getFname();
         assertEquals(expResult, result);
     }
-
+    
+    /*
+        Feature: Get student cgpa
+            Scenario: Verify cgpa value of a student
+                Given there is an student with id 22 and fname "Fahim" and cgpa 3.76
+                When asked for getCgpa 
+                Then I should get 3.76 cgpa value
+    */
+    
     /**
      * Test of getCgpa method, of class Student.
      */
